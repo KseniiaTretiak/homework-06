@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="background-color: #F7F7F7">
+    <form class="left">
+        <h2 class="nameleft">Create an Account</h2>
+
+        <div class="rowname">
+            <label class="labelrowname">
+                First Name <br>
+                <input type="text" name="firstname" placeholder="Anna" class="namef">
+            </label>
+            <label class="labelrowname">
+                Last Name <br>
+                <input type="text" name="lastname" placeholder="Smith" class="namef">
+            </label>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <label for="mail-input" class="mail">E-mail</label> <br>
+
+            <input type="email" name="email" id="mail-input" placeholder="name@domain.com" class="inmail">
+            <p class="pmail">We'll never share your email with anyone else.</p>
+        </div>
+
+        <div class="row">
+            <label class="renderbutm">
+                <input type="radio" name="gender" class="radiom">Male
+            </label>
+            <label class="renderbutm">
+                <input type="radio" name="gender" class="radiom">Female
+            </label>
+        </div>
+
+        <div class="rowcountry">
+            <label class="butcount">
+                Country
+                <select name="country" class="butcity">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Portugal">Portugal</option>
+                </select>
+            </label>
+            <label class="butcount">
+                City
+                <input type="text" placeholder="Kharkiv" class="butcityc">
+            </label>
+        </div>
+
+        <button class="singin">Sign Up</button>
+        <p class="termsofuse">By clicking the 'Sign Up' button, you confirm that you accept our<br>
+            <span>Terms of Use</span> and <span>Privacy Policy</span>
+        </p>
+        <hr class="line">
+        <p class="login">Have an account? <span>Log In</span></p>
+    </form>
+
+    <form class="right">
+        <h2 class="nameright">Profile</h2>
+        <img src="photo.png" alt="photoman" class="photo">
+        <div class="rowfile">
+            <label for="file" class="labelfile">
+                <input type="file" id="file" class="file">
+            </label>
+            <p class="parfile">Up to 1 MB (300x300 px)</p>
+
+            <label>
+                <input type="text" class="delete">
+            </label>
+        </div>
+
+        <div class="rowright">
+            <label class="rigname">
+                Name <br>
+                <input type="text" name="name" placeholder="Name" class="butrigname">
+            </label>
+            <label for="mail-button" class="rigname">
+                E-mail <br>
+                <input type="email" name="email" id="mail-button" placeholder="name@domain.com" class="butrigname">
+            </label>
+        </div>
+
+        <div class="rowright">
+            <label class="rigname">
+                Country <br>
+                <select name="country" class="butrigname">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Portugal">Portugal</option>
+                </select>
+            </label>
+            <label class="rigname">
+                City <br>
+                <input type="text" placeholder="City" class="butrigname">
+            </label>
+        </div>
+
+        <div class="rowright">
+            <label class="rigname">
+                Zip Code <br>
+                <input type="text" placeholder="0000-1111" class="butrigname">
+            </label>
+            <label class="rigname">
+                Phone Number <br>
+                <input type="tel" placeholder="+1 (00) 123 45 66" class="butrigname">
+            </label>
+        </div>
+        <button class="update">Update</button>
+    </form>
+
+
+</body>
+
+</html>
